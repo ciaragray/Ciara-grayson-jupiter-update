@@ -1,5 +1,7 @@
 /*Base Styles*/
-
+* {
+  scroll-behavior: smooth;
+}
 body {
   background-color: black;
   color: antiquewhite;
@@ -65,8 +67,11 @@ nav ul li a {
   align-items: center;
   justify-content: space-between;
 }
-#Skills {
+#Skills ul {
+  list-style: none;
+  padding-left: 0;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 #Connect ul {
   display: flex;
